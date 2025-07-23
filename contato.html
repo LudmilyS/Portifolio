@@ -8,53 +8,59 @@
   <meta name="author" content="Ludmily Oliveira">
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <link rel="icon" type="image/svg" href="./assets/img/astronauta.svg" />
+  <!-- Link para a Folha de Estilo da Página - CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
   <title>Meu Perfil</title>
 </head>
 
 <body>
-  <!-- Cabeçalho da Página (header) -->
-  <header>
+  	<!-- Cabeçalho da Página (header) -->
+		<header>
 
-    <!--Div Cabeçalho-->
-    <div id="header_content"> <!-- div# nome do id ele cria automático-->
+			<!-- Div Conteudo do Cabeçalho -->
+			<div id="header_content" class="flex">
 
-      <!-- Titulo do cabeçalho-->
-      <div id="titulo">
-        <h1>Ludmily Oliveira</h1>
+				<!-- Titulo do Cabeçalho -->
+				<div id="titulo">
 
-      </div>
+					<!-- Seu nome -->
+					<h1>Ludmily Oliveira</h1>
 
-      <!--Conteudo do menu (Header)-->
-      <div id="menu">
-        <!--Menu da Pagina-->
-        <nav>
+				</div>
 
-          <!--Marcadores não ordenados + links-->
-          <ul id="menu">
-            <li>
-              <a href="index.html"> Home </a>
-            </li>
-            <li>
-              <a href="Contato.html"> Contato</a>
-            </li>
-          </ul>
+				<!-- Conteudo do Menu da Página (header) -->
+				<div id="menu">
 
-        </nav>
+					<!-- Menu da Página -->
+					<nav>
 
-      </div>
+						<!-- Marcadores não ordenados + links -->
+						<ul id="menu">
+							<li>
+								<a href="index.html">Home</a>
+							</li>
+							<li>
+								<a href="contato.html">Contato</a>
+							</li>
+						</ul>
 
-    </div>
-  </header>
+					</nav>
 
-  <!-- indica o conteúdo principal da pagina (main) -->
-  <main>
+				</div>
 
-    <!--Seção do Formulário de contato e Redes sociais-->
-    <section id="contact">
+			</div>
 
-      <!--Seção do Formulário-->
-      <form action="#" method="submit" id="formulario">
-        <label for="nome">Nome: </label>
+		</header>
+
+<!-- Seção Principal da Página (main) -->
+		<main>
+			
+			<!-- Seção Formulário de Contato e Redes Sociais -->
+			<div id="contact" class="flex">
+				
+				<!-- Seção do Formulário-->
+				<form action="#" method="submit" id="formulario">
+					<label for="nome">Nome: </label>
 					<input
 						id="name"
 						type="text"
@@ -94,12 +100,12 @@
 					</textarea>
 
 					<button type="submit">Enviar</button>
-      </form>
+				</form>
 
-      <!--Seção do Google Maps-->
-      <article id="mapa">
-
-          <p>Av. Paulista, 100</p>
+     <!-- Seção do Google Maps -->
+<article id="mapa" class="flex_start">
+	
+    <p>Av. Paulista, 100</p>
 	<p>São Paulo - SP</p>
 
 	<iframe
@@ -115,34 +121,34 @@
 		>
 	</iframe>
 
-      </article>
+</article>
 
-    </section>
+    </div>
         
   </main>
 
   <!-- Rodapé da Página (footer) -->
-  <footer>
+		<footer class="flex">
 
-    <!-- Seção de contato - redes sociais -->
-     <section id="redes_sociais">
+			<!-- Seção de Contato - Redes Sociais-->
+			<section id="redes_sociais">
 
-      <a href="">
-        <img src="assets/img/linkedin.svg" alt="linkedin"/>
-      </a>
-      <a href="">
-        <img src="assets/img/github.svg" alt="github"/>
-      </a>
-      <a href="">
-        <img src="assets/img/instagram.svg" alt="instagram">
-      </a>
-      
-     </section>
+				<a href="">
+					<img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon"/>
+				</a>
+				<a href="">
+					<img src="assets/img/github.svg" alt="Github" class="social_icon"/>
+				</a>
+				<a href="">
+					<img src="assets/img/instagram.svg" alt="Instagram" class="social_icon"/>
+				</a>
 
-     <h3>
-      Feito com 🧡 por Ludmily Oliveira
-     </h3>
-  </footer>
+			</section>
+
+			<h3>Feito com 🧡 por Ludmily Oliveira </h3>
+
+		</footer>
+
 </body>
 
 </html>

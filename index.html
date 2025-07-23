@@ -8,6 +8,10 @@
   <meta name="author" content="Ludmily Oliveira">
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <link rel="icon" type="image/svg" href="./assets/img/astronauta.svg" />
+
+  <!-- Link para a Folha de Estilo da Página - CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
   <title>Meu Perfil</title>
 </head>
 
@@ -16,7 +20,7 @@
   <header>
 
     <!--Div Cabeçalho-->
-    <div id="header_content"> <!-- div# nome do id ele cria automático-->
+    <div id="header_content" class="flex"> <!-- div# nome do id ele cria automático-->
 
       <!-- Titulo do cabeçalho-->
       <div id="titulo">
@@ -50,15 +54,16 @@
   <main>
 
     <!--Seção sobre você-->
-    <section id="about">
+    <section id="about" class="flex_start">
 
       <!--Titulo da seção-->
       <h2>Sobre mim</h2>
 
       <!--Conteúdo da seção-->
-      <div id="conteudo">
+      <div id="conteudo" class="flex">
+
         <!--foto do criador do conteudo-->
-        <img src="./assets/img/user_02.svg" alt="Foto do criador do conteúdo" />
+        <img src="./assets/img/perfil quadrado.jpeg " alt="Foto do criador do conteúdo" class="img_profile" />
 
         <!--texto sobre o mim-->
         <article id="sobre_texto">
@@ -73,17 +78,15 @@
     </section>
 
     <!--Seção contendo um vídeo-->
-    <section id="video">
+    <section id="video" class="flex_start">
 
       <!--Título da seção-->
       <h2>Meu vídeo favorito:</h2>
 
       <!--Vídeo da seção-->
-      <div id="youtube">
-        <iframe width="560" 
-        height="315" 
-        src="https://www.youtube.com/embed/LXXQLa-5n5w?si=5A3TZxuYRPt7CXOi"
-          title="YouTube video player" frameborder="0"
+      <div id="youtube" class="flex">
+        <iframe width="790" height="417" src="https://www.youtube.com/embed/YXnQ02HYB1w?list=RDYXnQ02HYB1w"
+          title="Tu és + Águas Purificadoras (Ao Vivo) | Fhop Music" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
@@ -92,26 +95,26 @@
   </main>
 
   <!-- Rodapé da Página (footer) -->
-  <footer>
+  <footer class="flex">
 
     <!-- Seção de contato - redes sociais -->
-     <section id="redes_sociais">
+    <section id="redes_sociais">
 
       <a href="">
-        <img src="assets/img/linkedin.svg" alt="linkedin"/>
+        <img src="assets/img/linkedin.svg" alt="linkedin" />
       </a>
       <a href="">
-        <img src="assets/img/github.svg" alt="github"/>
+        <img src="assets/img/github.svg" alt="github" />
       </a>
       <a href="">
         <img src="assets/img/instagram.svg" alt="instagram">
       </a>
-      
-     </section>
 
-     <h3>
+    </section>
+
+    <h3>
       Feito com 🧡 por Ludmily Oliveira
-     </h3>
+    </h3>
   </footer>
 </body>
 

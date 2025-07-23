@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+
+:root{
+  --rose-1: #FFCDB2;
+  --rose-2: #FFB4A2;
+  --rose-3: #E5989B;
+  --rose-4: #B5838D;
+
+  --cinza-1: #6D6875;
+
+  --pale-dogwood: #CDB2AB;
+  --rose-ebony: #775253;
+
+  --branco: #F9F9F9;
+
+  --preto: #171717;
+}
+
+html  {
+  width: 100%;
+  height: 100vh;
+}
+
+body{
+  background: var(--rose-ebony);
+  color: var(--preto);
+}
+
+/* Definindo as configurações de títulos e paragrafo */
+
+h1{
+  color: var(--rose-1);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2{
+  padding: 1rem;
+  color: var(--preto);
+  font-size: 1.5rem;
+  font-weight: 600; /*aplica a formatação Bold no texto*/
+  text-align: left;
+}
+
+h3{
+  padding: 1rem;
+  color: var(--rose-2);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+p{
+  font-size: 1rem;
+  line-height: 1.5rem; /*define a altura da linha com o valor 1.5rem 🡲 24px no navegador WEB*/
+  text-align: justify;
+  padding: 0.5rem 0;
+}
+
+/*Criando as estilizações com flexbox*/
+
+/* criação da classe .flex */
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex_start{
+  display: flex;
+  justify-content: flex-start;
+}
+
+#header_content{
+  height: 80px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: var(--rose-4);
+}
+
+#menu li{
+  display: inline;
+  padding: 1rem
+  ;
+}
+
+#menu li a{
+  text-decoration: none;
+  color: var(--rose-2);
+  font-size: 20px;
+}
+
+#menu li a:hover { /*Adiciona um estilo especial quando o mouse está sobre o elemento*/
+  color: var(--rose-3);
+  text-decoration: underline;
+}
+
+#about{
+  flex-direction: column;
+  margin: 2rem auto;
+  width: 90%;
+}
+
+#conteudo{
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.img_profile{
+  width: 300px;
+  border-radius: 50%;
+}
+
+#video{
+  flex-direction: column;
+  /* aspect-ratio: 16/9; proporção do vídeo */
+  margin: 2rem auto;
+  width: 80%; /*define a largura da seção*/
+}
+
+footer{
+  flex-direction: column;
+  margin: 0;
+  padding: 2rem;
+  color: var(--rose-2);
+  background-color: var(--rose-4);
+  font-weight: bold;
+  text-align: center;
+}
+
+#contact{
+  flex-direction: row;
+  gap: 2rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  margin: 2rem 0;
+  padding: 1.5 rem;
+  border: none;
+}
+
+form label{
+  font-size: 1rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+form input,
+textarea{
+  resize: none;
+  height: 5rem;
+}
+
+form span{
+  margin: 0 0 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: red;
+}
+
+form button{
+  text-align: center;
+  padding: 0.75rem 2rem;
+  background: var(--rose-4);
+  border: 1px solid var(--cinza-1);
+  color: var(--branco);
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-size: 1rem;  
+}
+
+form button:hover {
+  background: var(--rose-4);
+}
+
+#mapa{
+  width: 480px;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#endereco > p{
+  font-size: 1rem;
+  text-align: justify;
+  font-weight: 600;
+}
